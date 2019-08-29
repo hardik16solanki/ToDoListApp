@@ -12,4 +12,6 @@ public interface ToDoRepository extends CrudRepository<ToDoItem, Long>{
 	
 	ToDoItem findByTodoName(String todoName);
 	
+	Iterable<ToDoItem> findAllByTodoUser(String user);
+	
 }
